@@ -11,7 +11,7 @@ const toolboxXml = `
 // === Block "When launched" ===
 Blockly.Blocks['when_run'] = {
   init: function () {
-    this.appendDummyInput().appendField('When launched ▶');
+    this.appendDummyInput().appendField('Quando executar ▶');
     this.setColour('#4f46e5');
     this.setNextStatement(true, null);
     this.setDeletable(false);
@@ -37,19 +37,19 @@ function makeMoveBlock(type, label, dir) {
   };
 }
 
-makeMoveBlock('move_up', 'Move up ⬆️', 'up');
-makeMoveBlock('move_down', 'Move down ⬇️', 'down');
-makeMoveBlock('move_left', 'Move left ⬅️', 'left');
-makeMoveBlock('move_right', 'Move right ➡️', 'right');
+makeMoveBlock('move_up', 'Mover para cima ⬆️', 'cima');
+makeMoveBlock('move_down', 'Mover para baixo ⬇️', 'baixo');
+makeMoveBlock('move_left', 'Mover para a esquerda ⬅️', 'esquerda');
+makeMoveBlock('move_right', 'Mover para a direita ➡️', 'direita');
 
 // === New block "Take a carrot" ===
 Blockly.Blocks['take_carrot'] = {
   init: function () {
-    this.appendDummyInput().appendField("Take 🥕");
+    this.appendDummyInput().appendField("Pegue 🥕");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour('#f59e0b');
-    this.setTooltip("Take the carrot if you are standing on it.");
+    this.setTooltip("Pegue a cenoura se você estiver em cima dela.");
   }
 };
 Blockly.JavaScript['take_carrot'] = function (block) {
