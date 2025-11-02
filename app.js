@@ -194,7 +194,7 @@ async function run() {
     if (cmd === 'move') {
       const ok = await step(arg);
       if (!ok) {
-        showFailModal('Você bateu em uma parede ou saiu do limite!');
+        showFailModal('Você bateu em uma parede ou saiu dos limites!');
         state.running = false;
         return;
       }
