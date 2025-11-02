@@ -37,10 +37,10 @@ function makeMoveBlock(type, label, dir) {
   };
 }
 
-makeMoveBlock('move_up', 'Mover para cima ⬆️', 'cima');
-makeMoveBlock('move_down', 'Mover para baixo ⬇️', 'baixo');
-makeMoveBlock('move_left', 'Mover para a esquerda ⬅️', 'esquerda');
-makeMoveBlock('move_right', 'Mover para a direita ➡️', 'direita');
+makeMoveBlock('move_up', 'Mover para cima ⬆️', 'up');
+makeMoveBlock('move_down', 'Mover para baixo ⬇️', 'down');
+makeMoveBlock('move_left', 'Mover para a esquerda ⬅️', 'left');
+makeMoveBlock('move_right', 'Mover para a direita ➡️', 'right');
 
 // === New block "Take a carrot" ===
 Blockly.Blocks['take_carrot'] = {
