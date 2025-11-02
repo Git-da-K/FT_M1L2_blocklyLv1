@@ -9,10 +9,10 @@ const LEVELS_RABBIT = [
       "..R.W",
       ".W.WW"
     ],
-    goal: "Reach the 🚪 in 4 steps.",
+    goal: "Chegue até a 🚪 em 4 passos.",
     maxBlocks: 15,
     needCarrots: false,
-    hint: "Go down and to the right."
+    hint: "Vá para baixo e para a direita."
   },
   {
     size: 5,
@@ -23,10 +23,10 @@ const LEVELS_RABBIT = [
       ".WEW.",
       "WWWWW"
     ],
-    goal: "Reach the 🚪 while avoiding the walls.",
+    goal: "Chega até a 🚪 evitando as paredes.",
     maxBlocks: 15,
     needCarrots: false,
-    hint: "Move around the walls in a zigzag."
+    hint: "Mova-se ao longo das paredes em ziguezague."
   },
   {
     size: 5,
@@ -37,10 +37,10 @@ const LEVELS_RABBIT = [
       ".W.W.",
       "....E"
     ],
-    goal: "Reach the 🚪 through the maze.",
+    goal: "Chegue até a 🚪 através do labirinto.",
     maxBlocks: 15,
     needCarrots: false,
-    hint: "Go down, then to the right."
+    hint: "Vá para baixo e depois para a direita."
   },
   {
     size: 5,
@@ -51,10 +51,10 @@ const LEVELS_RABBIT = [
       ".W...",
       "...E."
     ],
-    goal: "Find a path to the 🚪.",
+    goal: "Encontre um caminho até a 🚪.",
     maxBlocks: 15,
     needCarrots: false,
-    hint: "Look for a route through the free cells."
+    hint: "Procure um caminho através das áreas livres."
   },
   {
     size: 5,
@@ -65,10 +65,10 @@ const LEVELS_RABBIT = [
       "W.W.W",
       "E...."
     ],
-    goal: "A tricky route to the 🚪.",
+    goal: "Uma rota difícil até a 🚪.",
     maxBlocks: 15,
     needCarrots: false,
-    hint: "Move in a zigzag down and to the left."
+    hint: "Mova-se em ziguezague para baixo e para a esquerda."
   },
 
   // === 6–10: carrots + exit ===
@@ -81,10 +81,10 @@ const LEVELS_RABBIT = [
       ".W...",
       "..WWE"
     ],
-    goal: "Collect the 🥕 and reach the 🚪.",
+    goal: "Colete as 🥕 e chegue até a 🚪.",
     maxBlocks: 15,
     needCarrots: true,
-    hint: "Don’t miss the carrot!"
+    hint: "Não deixe passar a cenoura!"
   },
   {
     size: 5,
@@ -95,10 +95,10 @@ const LEVELS_RABBIT = [
       ".W.W.",
       "....E"
     ],
-    goal: "Collect all 🥕 and go to the 🚪.",
+    goal: "Colete todas as 🥕 e vá até a🚪.",
     maxBlocks: 15,
     needCarrots: true,
-    hint: "Go around the walls."
+    hint: "Dê a volta pelas paredes."
   },
   {
     size: 5,
@@ -109,10 +109,10 @@ const LEVELS_RABBIT = [
       ".W.W.",
       "E...."
     ],
-    goal: "All 🥕 must be collected!",
+    goal: "Todas as 🥕 devem ser coletadas!",
     maxBlocks: 15,
     needCarrots: true,
-    hint: "Carrots first, then the door."
+    hint: "Primeiro as cenouras, depois a porta."
   },
   {
     size: 5,
@@ -123,10 +123,10 @@ const LEVELS_RABBIT = [
       "W.W..",
       "..E.."
     ],
-    goal: "Collect 🥕 and reach the 🚪.",
+    goal: "Colete as 🥕 e vá até a🚪.",
     maxBlocks: 15,
     needCarrots: true,
-    hint: "Find the shortest path to the carrots."
+    hint: "Encontre o caminho mais curto até as cenouras."
   },
   {
     size: 5,
@@ -137,9 +137,9 @@ const LEVELS_RABBIT = [
       ".W.C.",
       "E...."
     ],
-    goal: "Final task: collect all 🥕 and reach the 🚪.",
+    goal: "Última tarefa: colete todas as 🥕 e chegue até a 🚪.",
     maxBlocks: 15,
     needCarrots: true,
-    hint: "You’ll need to move in a zigzag."
+    hint: "Você precisará se mover em ziguezague."
   }
 ];
