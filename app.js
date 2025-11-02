@@ -56,7 +56,7 @@ function loadLevel(idx) {
 
   currentLevel = idx;
   const L = LEVELS_RABBIT[idx];
-  $('#levelTitle').textContent = `Level ${idx + 1}/${LEVELS_RABBIT.length}`;
+  $('#levelTitle').textContent = `Nível ${idx + 1}/${LEVELS_RABBIT.length}`;
   $('#limit').textContent = L.maxBlocks;
   $('#used').textContent = 0;
 
@@ -170,7 +170,7 @@ function canUseMoreBlocks() {
 async function run() {
   if (state.running) return;
   if (!canUseMoreBlocks()) {
-    showFailModal('Too many blocks!');
+    showFailModal('Blocos demais!');
     return;
   }
   compile();
@@ -194,7 +194,7 @@ async function run() {
     if (cmd === 'move') {
       const ok = await step(arg);
       if (!ok) {
-        showFailModal('You’ve hit a wall or gone out of bounds!');
+        showFailModal('Você bateu em uma parede ou saiu do limite!');
         state.running = false;
         return;
       }
@@ -211,7 +211,7 @@ async function run() {
   // проверяем победу
   const won = checkWin();
   if (!won) {
-    showFailModal('Try again!');
+    showFailModal('Tente novamente!');
     // сбросим кролика и морковки
     state.rabbit = { ...state.start };
     state.grid = state.original.map(row => [...row]);
@@ -253,7 +253,7 @@ async function takeCarrot() {
     renderBoard();
     return true;
   } else {
-    showFailModal('There is no carrot here! 🥕❌');
+    showFailModal('Não há cenoura aqui! 🥕❌');
     return false;
   }
 }
@@ -276,7 +276,7 @@ function checkWin() {
     }
     return true;
   } else if (atExit && needCarrots && !allCarrots) {
-    showFailModal('Collect all carrots!');
+    showFailModal('Colete todas as cenouras!');
     return false;
   }
   return false;
@@ -341,7 +341,7 @@ function exitFX(cx, cy) {
 function showFailModal(msg) {
   try { sounds.fail.currentTime = 0; sounds.fail.play(); } catch {}
   const dlg = $('#modal');
-  $('#modalTitle').textContent = 'Mistake!';
+  $('#modalTitle').textContent = 'Erro!';
   $('#modalBody').innerHTML = `
     <p>${msg}</p>
     <img src="img/fail.png" alt="fail" style="max-width:120px">
@@ -363,16 +363,16 @@ function showWinModal(final) {
 
   if (final) {
     dlg.classList.add('win-final');
-    $('#modalTitle').textContent = 'Congratulations! 🏆';
+    $('#modalTitle').textContent = 'Parabéns! 🏆';
     $('#modalBody').innerHTML = `
-      <p>You've completed all the levels!</p>
+      <p>Você completou todos os níveis!</p>
       <img src="img/trophy.png" alt="trophy">
       <div class="modal-actions"><button id="okBtn" class="btn primary">Ok</button></div>
     `;
   } else {
-    $('#modalTitle').textContent = 'Good job!';
+    $('#modalTitle').textContent = 'Bom trabalho!';
     $('#modalBody').innerHTML = `
-      <p>The level is completed!</p>
+      <p>O nível foi concluído!</p>
       <img src="img/success.gif" alt="success">
       <div class="modal-actions"><button id="okBtn" class="btn primary">Ok</button></div>
     `;
