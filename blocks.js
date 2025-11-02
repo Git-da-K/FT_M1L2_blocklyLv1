@@ -45,7 +45,7 @@ makeMoveBlock('move_right', 'Mover para a direita ➡️', 'direita');
 // === New block "Take a carrot" ===
 Blockly.Blocks['take_carrot'] = {
   init: function () {
-    this.appendDummyInput().appendField("Pegue 🥕");
+    this.appendDummyInput().appendField("Pegar 🥕");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour('#f59e0b');
